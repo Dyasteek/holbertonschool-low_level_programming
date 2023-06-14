@@ -1,0 +1,7 @@
+#!/bin/bash
+echo File name?
+read filename
+touch $filename
+chmod u+x $filename
+echo "#!/bin/bash" > $filename
+vi $filename
