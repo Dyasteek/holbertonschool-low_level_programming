@@ -3,5 +3,5 @@ echo File name?
 read filename
 touch $filename
 chmod u+x $filename
-echo "#!/bin/bash" > $filename
+echo "#include <stdio.h>" > $filename
 vi $filename
