@@ -6,6 +6,7 @@ _islower(int c)
 int r;
 if (c >= 96 && c <= 123)
 r = 1;
-_putchar('\n');
-return (0);
+else
+r = 0;
+return (r);
 }
