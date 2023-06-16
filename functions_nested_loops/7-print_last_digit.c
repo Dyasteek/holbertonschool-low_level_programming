@@ -22,4 +22,4 @@ int print_last_digit(int n)
 		_putchar(i + '0');
 	}
 	return (i);
-}#include \'main.h\'
+}
