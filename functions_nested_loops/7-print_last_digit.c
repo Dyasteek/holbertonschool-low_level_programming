@@ -1,7 +1,12 @@
 #include "main.h"
-
-int
-print_last_digit(int n)
+/**
+ * print_last_digit - Entry point
+ * @n: char
+ * Description: Size of
+ *
+ * Return: On success 0
+ */
+int print_last_digit(int n)
 {
 	int i;
 
@@ -17,4 +22,4 @@ print_last_digit(int n)
 		_putchar(i + '0');
 	}
 	return (i);
-}
+}#include \'main.h\'
