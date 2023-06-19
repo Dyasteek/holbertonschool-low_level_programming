@@ -2,16 +2,14 @@ CC = gcc
 SRC = school.c main.c m.h
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = rm
-.PHONY : clean
-.PHONY : oclean
-.PHONY : fclean
+RM = rm -f
+
+
 all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean :
-	$(RM) -f $(wildcard *~) $(NAME)
+	$(RM) *~ $(NAME)
 oclean :
-	$(RM) -f $(OBJ)
-fclean :
-	$(RM) -f $(wildcard *~) $(NAME) $(OBJ)
+	$(RM) $(OBJ)
+fclean : clean oclean
 re : fclean all
