@@ -1,14 +1,16 @@
+#include <stdio.h>
 #include "main.h"
-/**
- * puts2 - Main function
- * @str: Address of st
- */
-void puts2(char *str)
+
+void
+puts2(char *str)
 {
-	while (*str != '\0')
-	{
-		_putchar(*str);
-		str += 2;
-	}
-	_putchar('\n');
+int a;
+for (a = 0; *(str + a) != '\0'; a++)
+{
+if (a % 2 == 0)
+{
+_putchar(str[a]);
+}
+}
+_putchar('\n');
 }
