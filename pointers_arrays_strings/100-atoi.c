@@ -1,8 +1,13 @@
-#include <stdio.h>
-#include "main.h"
+#include "holberton.h"
 
-int
-_atoi(char *s)
+/**
+ * _atoi - convert a string to an integer
+ *
+ * @s: string
+ * Return: integer.
+ */
+
+int _atoi(char *s)
 {
   int a, b, c, res, sig, size;
   for (size = 0; s[size] != '\0'; size++)
