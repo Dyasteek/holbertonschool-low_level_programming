@@ -1,8 +1,9 @@
-#include <stdio.h>
 #include "main.h"
-
-void
-puts2(char *str)
+/**
+ * puts2 - Main function
+ * @str: Address of st
+ */
+void puts2(char *str)
 {
 	while (*str != '\0')
 	{
