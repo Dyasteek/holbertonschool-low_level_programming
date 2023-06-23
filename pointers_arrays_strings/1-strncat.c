@@ -16,8 +16,7 @@ char
 		continue;
 	for (ini = 0; dest[ini]; ini++)
 		continue;
-	manini = man + ini;
-
+	manini = man + n;
 	for ( ;ini <= manini; ini++)
 	{
 		dest[ini] + src[d];
