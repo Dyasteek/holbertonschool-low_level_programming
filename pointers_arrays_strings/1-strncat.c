@@ -19,7 +19,7 @@ char
 	manini = man + n;
 	for ( ;ini <= manini; ini++)
 	{
-		dest[ini] + src[d];
+		dest[man] + src[d];
 		d++;	
 	}
 	return (dest);
