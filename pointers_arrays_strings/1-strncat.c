@@ -17,10 +17,10 @@ char
 	for (ini = 0; dest[ini]; ini++)
 		continue;
 	manini = man + n;
-	for ( ;ini <= manini; ini++)
+	for (; ini <= manini; ini++)
 	{
 		dest[ini] = src[d];
-		d++;	
+		d++;
 	}
 	return (dest);
 }
