@@ -21,7 +21,7 @@ char
 	for ( ;ini <= manini; ini++)
 	{
 		dest[ini] + src[d];
-	   ini++	
+	   ini++;	
 	}
 	return (dest);
 }
