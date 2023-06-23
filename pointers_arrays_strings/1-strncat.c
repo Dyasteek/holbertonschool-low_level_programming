@@ -3,24 +3,16 @@
 
 char
 *_strncat(char *dest, char *src, int n)
+
 {
-	int man;
-	int ini;
-	int manini;
-	int d;
-
-	d = 0;
-	manini = 0;
-
-	for (man = 0; src[man]; man++)
-		continue;
-	for (ini = 0; dest[ini]; ini++)
-		continue;
-	manini = man + n;
-	for (; ini <= manini; ini++)
-	{
-		dest[ini] = src[d];
-		d++;
-	}
-	return (dest);
+int size_d, a;
+for (size_d = 0; dest[size_d] != '\0'; size_d++)
+{
+}
+for (a = 0; a < n && src[a] != '\0'; a++)
+{
+dest[size_d + a] = src[a];
+}
+dest[size_d + a] = '\0';
+return (dest);
 }
