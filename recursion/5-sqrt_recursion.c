@@ -14,4 +14,13 @@ int chksqrt(int n, int b)
 	{
 		return (b);
 	}
+	else if (b == n || n < 0)
+	{
+		return (-1);
+	}
+	else
+	{
+		b++
+	}
+	return (chksqrt(n, b));
 }
