@@ -20,7 +20,7 @@ int chksqrt(int n, int b)
 	}
 	else
 	{
-		b++
+		b++;
 	}
 	return (chksqrt(n, b));
 }
