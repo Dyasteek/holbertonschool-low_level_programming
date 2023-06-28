@@ -9,7 +9,8 @@ _sqrt_recursion(int n)
 	return (b);
 }
 
-int chksqrt(int n, int b)
+int
+chksqrt(int n, int b)
 {
 	if (n == (b * b))
 	{
