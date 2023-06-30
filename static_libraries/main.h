@@ -1,5 +1,5 @@
-#ifndef main
-#define main
+#ifndef stdio
+#define stdio
 
 int _putchar(char c);
 int _islower(int c);
