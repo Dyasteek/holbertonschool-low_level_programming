@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *_strdup(char *str)
+char
+*_strdup(char *str)
 {
 	char *a;
 	int i, c;
