@@ -5,21 +5,21 @@
 void
 *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *p;
-	unsigned int i;
+	char *arr;
+	unsigned int a;
 
-	if (nmemb <= 0 || size <= 0)
+	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	p = malloc(nmemb * size);
-	if (p == NULL)
+	arr = malloc(nmemb * size);
+	if (arr == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < nmemb; i++)
+	for (a = 0; a < (nmemb * size); a++)
 	{
-		p[i] = 0;
+		arr[a] = 0;
 	}
-	return (p);
+	return (arr);
 }
