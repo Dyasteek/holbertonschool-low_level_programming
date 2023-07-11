@@ -1,8 +1,13 @@
 #ifndef calc_h
 #define calc_h
 
-typedef
-struct op
+/**
+ * struct op - Struct op
+ *
+ * @op: The operator
+ * @f: The function associated
+ */
+typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
