@@ -22,6 +22,7 @@ void
 print_str(char *str, va_list list)
 {
 	char *temp;
+
 	temp = va_arg(list, char *);
 	if (temp == NULL)
 	{
