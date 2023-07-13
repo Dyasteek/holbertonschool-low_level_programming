@@ -25,7 +25,7 @@ print_str(char *str, va_list list)
 	temp = va_arg(list, char *);
 	if (temp == NULL)
 	{
-		printf("(nil)");
+		temp = "(nil)";
 	}
 	printf("%s%s", str, temp);
 }
