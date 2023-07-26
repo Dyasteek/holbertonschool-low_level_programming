@@ -4,6 +4,13 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+
+/**
+ * print_list - print all the elements of a linked list
+ * @h: pointer to the list to print
+ *
+ * Return: the number of the nodes printed
+ */
 typedef struct list_s
 {
 	char *str;
