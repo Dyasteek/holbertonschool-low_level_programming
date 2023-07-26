@@ -1,15 +1,16 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef _LISTS_H_
+#define _LISTS_H_
 
 #include <string.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
- * print_list - print all the elements of a linked list
- * @h: pointer to the list to print
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
  *
- * Return: the number of the nodes printed
+ * Description: singly linked list node structure
  */
 typedef struct list_s
 {
@@ -19,5 +20,4 @@ typedef struct list_s
 } list_t;
 
 size_t print_list(const list_t *h);
-
 #endif
