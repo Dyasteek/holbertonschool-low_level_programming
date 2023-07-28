@@ -1,7 +1,7 @@
 #include "lists.h"
 
 dlistint_t
-*add_dnodeint(dlistint_t **head, const int n)
+*add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *current = NULL, *new_node = NULL;
 
