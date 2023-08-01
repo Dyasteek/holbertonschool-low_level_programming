@@ -3,7 +3,7 @@
 ssize_t
 read_textfile(const char *filename, size_t letters)
 {
-	long long int desc, cont;
+	int desc, cont;
 	char *buff;
 
 	buff = malloc(letters + 1);
