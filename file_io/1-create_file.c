@@ -3,6 +3,8 @@
 int
 create_file(const char *filename, char *text_content)
 {
+    int fd, write_f;
+
     if (!filename)
     {
         return (-1);
