@@ -47,3 +47,5 @@ dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_out), exit(100);
 }
 return (0);
 }
+}
+}
