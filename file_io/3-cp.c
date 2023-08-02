@@ -11,7 +11,7 @@ mode_t mode_file = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 /*Block of algorithm for validate data*/
 if (argc != 3)
 {
-/* print to a file descriptor */
+/*print to a file descriptor */
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 }
 fd_in = open(argv[1], O_RDONLY);
@@ -35,6 +35,8 @@ if (read_file > 0)
 check = write(fd_out, buffer, read_file);
 if (check == -1) /*If can't write*/
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+}
+}
 check = close(fd_in); /*close file*/
 if (check == -1)
 {
@@ -46,6 +48,4 @@ if (check == -1)
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_out), exit(100);
 }
 return (0);
-}
-}
 }
