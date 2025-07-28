@@ -37,7 +37,13 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest_file);
 		exit(99);
 	}
-	while ((nread = read(org_fd, buffer, BUFFER_SIZE)) > 0)
+	nread = read(org_fd, buffer, BUFFER_SIZE);
+	if (nread == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", org_file);
+		exit(98);
+	}
+	while (nread > 0)
 	{
 		nwrite = write(dest_fd, buffer, nread);
 		if (nwrite == -1)
@@ -45,11 +51,12 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest_file);
 			exit(99);
 		}
-	}
-	if (nread == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", org_file);
-		exit(98);
+		nread = read(org_fd, buffer, BUFFER_SIZE);
+		if (nread == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", org_file);
+			exit(98);
+		}
 	}
 	if (close(org_fd) == -1)
 	{
